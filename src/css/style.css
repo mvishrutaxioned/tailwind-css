@@ -1,0 +1,44 @@
+.slick-dots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 6%;
+    color: #fff;
+}
+
+.slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin: 4px 0;
+    border-radius: 50%;
+    display: inline-block;
+    background: #666;
+    text-indent: -9999px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.slick-dots li:hover {
+    background-color: #fff;
+    transform: scale(1.5);
+}
+
+.slick-dots li.slick-active { background: #fff; }
+
+.menuBtn,
+.closeBtn,
+.like::after,
+.play::after,
+.played::before,
+.more::after,
+.featured-slider .slick-prev::after,
+.featured-slider .slick-next::after,
+.radio-slider .slick-prev::after,
+.radio-slider .slick-next::after {
+    font-family: "Font Awesome 5 Free";
+}
+
+.back {
+    height: 400px;
+    background: url('../../src/images/back.jpeg');
+}

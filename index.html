@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <title>Tailwind CSS</title>
+    <meta name="description" lang="en" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" media="screen" href=".//vendor/font-awesome/css/all.min.css" >
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+  </head>
+  <body class="bg-black">
+    <!--container start-->
+    <div>
+      <!--header section start-->
+      <header class="w-full bg-black fixed top-0 z-20">
+          <div class="wrapper my-5 flex justify-between items-center">
+                <h1 class="lg:w-1/12 w-2/12"><a class="logo text-2xl" href="#FIXME" title="Beatstack">beatStack</a></h1>
+                <nav class="navbar translate-x-full md:translate-x-0">
+                    <span id="close" class="closeBtn">close</span>
+                    <ul class="flex md:flex-row flex-col items-center">
+                        <li class="mx-2"><a class="nav-link text-white" href="#FIXME" title="Discover">Discover</a></li>
+                        <li class="mx-2"><a class="nav-link" href="#FIXME" title="Browse">Browse</a></li>
+                        <li class="mx-2"><a class="nav-link" href="#FIXME" title="Stream">Stream</a></li>
+                        <li class="mx-2"><a class="nav-link" href="#FIXME" title="Charts">Charts</a></li>
+                        <li class="mx-2"><a class="nav-link" href="#FIXME" title="Shop">Shop</a></li>
+                    </ul>
+                    <div class="md:mt-0 mt-6">
+                        <a class="nav-item p-4 hover:sm:text-gray-400" href="#FIXME" title="Sign In">Signin</a>
+                        <a class="nav-item py-1 px-2 rounded-sm bg-gray-500 hover:sm:bg-gray-600" href="#FIXME" title="Sign Up">Signup</a>
+                    </div>
+                </nav>
+                <span id="menu" class="menuBtn">menu</span>
+          </div>
+      </header>
+      <!--header section ends-->
+      <!--main section start-->
+      <main>
+        <section class="w-full mt-16">
+            <ul class="banner-slider h-auto overflow-hidden">
+                <li class="flex flex-col items-center">
+                    <figure class="banner-figure">
+                        <img class="banner-image" src="./src/images/banner1.jpg" alt="Banner 1">
+                        <div class="banner-content">
+                            <h2 class="banner-heading">Amazing Songs</h2>
+                            <p class="banner-text">Ac porttitor et dui viverra tortor et lorem eget fringilla lectus vitae convallis eget tincidunt habitant id vestibulum velit leo et dui viverra tortor et lorem eget fring</p>
+                            <a href="#FIXME" class="banner-link" title="New Arrivals">New Arrivals</a>
+                        </div>
+                    </figure>
+                </li>
+                <li class="flex flex-col items-center">
+                    <figure class="banner-figure">
+                        <img class="banner-image" src="./src/images/banner2.jpeg" alt="Banner 2">
+                        <div class="banner-content">
+                            <h2 class="banner-heading">beatStack Top Charts</h2>
+                            <p class="banner-text">Ac porttitor et dui viverra tortor et lorem eget fringilla lectus vitae convallis eget tincidunt habitant id vestibulum velit leo et dui viverra tortor et lorem eget fring</p>
+                            <a href="#FIXME" class="banner-link" title="Top Charts">Top Charts</a>
+                        </div>
+                    </figure>
+                </li>
+                <li class="flex flex-col items-center">
+                    <figure class="banner-figure">
+                        <img class="banner-image" src="./src/images/banner3.jpeg" alt="Banner 3">
+                        <div class="banner-content">
+                            <h2 class="banner-heading">Online Streaming</h2>
+                            <p class="banner-text">Ac porttitor et dui viverra tortor et lorem eget fringilla lectus vitae convallis eget tincidunt habitant id vestibulum velit leo et dui viverra tortor et lorem eget fring</p>
+                            <a href="#FIXME" class="banner-link" title="Explore">Explore</a>
+                        </div>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="featured my-12">
+            <div class="wrapper">
+                <h2 class="section-heading">Featured Tracks</h2>
+                <ul class="featured-slider flex justify-center items-center">
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image1.webp" alt="Featured Track 1">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content">
+                            <a href="#FIXME" class="feature-name" title="Cradles">Cradles</a>
+                            <a href="#FIXME" class="feature-artist" title="Sub Urban">Sub Urban</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image2.jpg" alt="Featured Track 2">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Dynamite">Dynamite</a>
+                            <a href="#FIXME" class="feature-artist" title="BTS">BTS</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image3.jpg" alt="Featured Track 3">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="How You Like That">How You Like That</a>
+                            <a href="#FIXME" class="feature-artist" title="BLACKPINK">BLACKPINK</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image4.jpg" alt="Featured Track 4">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Pillowtalk">Pillowtalk</a>
+                            <a href="#FIXME" class="feature-artist" title="Zayn Malik">Zayn Malik</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image5.jpg" alt="Featured Track 5">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Stay">Stay</a>
+                            <a href="#FIXME" class="feature-artist" title="Justin Bieber">Justin Bieber</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image1.webp" alt="Featured Track 6">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Cradles">Cradles</a>
+                            <a href="#FIXME" class="feature-artist" title="Sub Urban">Sub Urban</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image5.jpg" alt="Featured Track 7">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Stay">Stay</a>
+                            <a href="#FIXME" class="feature-artist" title="Justin Bieber">Justin Bieber</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image2.jpg" alt="Featured Track 8">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Dynamite">Dynamite</a>
+                            <a href="#FIXME" class="feature-artist" title="BTS">BTS</a>
+                        </div>
+                    </li>
+                    <li class="mx-3 group">
+                        <figure class="feature-figure">
+                            <img src="./src/images/image1.webp" alt="Featured Track 9">
+                            <div class="feature-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="track-content flex flex-col">
+                            <a href="#FIXME" class="feature-name" title="Cradles">Cradles</a>
+                            <a href="#FIXME" class="feature-artist" title="Sub Urban">Sub Urban</a>
+                        </div>3
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="radio">
+            <div class="wrapper">
+                <h2 class="section-heading">Online Radio</h2>
+                <ul class="radio-slider">
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image6.jpg" alt="Radio 1">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Lucid Dreams">Lucid Dreams</a>
+                            <a href="#FIXME" class="radio-artist" title="JUICE Wrld">JUICE Wrld</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image2.jpg" alt="Radio 2">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Dynamite">Dynamite</a>
+                            <a href="#FIXME" class="radio-artist" title="BTS">BTS</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image5.jpg" alt="Radio 3">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Stay">Stay</a>
+                            <a href="#FIXME" class="radio-artist" title="Justin Bieber">Justin Bieber</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image6.jpg" alt="Radio 4">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Lucid Dreams">Lucid Dreams</a>
+                            <a href="#FIXME" class="radio-artist" title="JUICE Wrld">JUICE Wrld</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image4.jpg" alt="Radio 5">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Pillowtalk">Pillowtalk</a>
+                            <a href="#FIXME" class="radio-artist" title="Zayn Malik">Zayn Malik</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image3.jpg" alt="Radio 6">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Du Dudu Du">Du Dudu Du</a>
+                            <a href="#FIXME" class="radio-artist" title="BLACKPINK">BLACKPINK</a>
+                        </div>
+                    </li>
+                    <li class="radio-li group">
+                        <figure class="radio-figure">
+                            <img src="./src/images/image5.jpg" alt="Radio 7">
+                            <div class="radio-content">
+                                <span class="like">like</span>
+                                <span class="play">play</span>
+                                <span class="more">more</span>
+                            </div>
+                        </figure>
+                        <div class="radio-info">
+                            <a href="#FIXME" class="radio-name" title="Stay">Stay</a>
+                            <a href="#FIXME" class="radio-artist" title="Justin Bieber">Justin Bieber</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="topPlay-events my-10">
+            <div class="wrapper flex md:flex-row md:justify-between md:items-start flex-col items-center">
+                <div class="top-played text-gray-400 mr-2 md:w-1/2 w-full">
+                    <h2 class="section-heading">Top Played In This Week</h2>
+                    <ul>
+                        <li class="topPlayed-li group">
+                            <div class="flex items-center">
+                                <span class="num">1</span>
+                                <figure class="topPlayed-figure">
+                                    <img src="./src/images/image1.webp" alt="Top Played 1">
+                                    <div class="topPlayed-icon">
+                                        <span class="play">play</span>
+                                    </div>
+                                </figure>
+                                <div class="flex flex-col">
+                                    <a href="#FIXME" class="topPlayed-name" title="Cradles">Cradles</a>
+                                    <a href="#FIXME" class="topPlayed-artist" title="Sub Urban">Sub Urban</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="played"> 165</span>
+                                <span class="like mx-4">like</span>
+                                <span class="more">more</span>
+                            </div>
+                        </li>
+                        <li class="topPlayed-li group">
+                            <div class="flex items-center">
+                                <span class="num">2</span>
+                                <figure class="topPlayed-figure">
+                                    <img src="./src/images/image2.jpg" alt="Top Played 2">
+                                    <div class="topPlayed-icon">
+                                        <span class="play">play</span>
+                                    </div>
+                                </figure>
+                                <div class="flex flex-col">
+                                    <a href="#FIXME" class="topPlayed-name" title="Dynamite">Dynamite</a>
+                                    <a href="#FIXME" class="topPlayed-artist" title="BTS">BTS</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="played"> 265</span>
+                                <span class="like mx-4">like</span>
+                                <span class="more">more</span>
+                            </div>
+                        </li>
+                        <li class="topPlayed-li group">
+                            <div class="flex items-center">
+                                <span class="num">3</span>
+                                <figure class="topPlayed-figure">
+                                    <img src="./src/images/image4.jpg" alt="Top Played 3">
+                                    <div class="topPlayed-icon">
+                                        <span class="play">play</span>
+                                    </div>
+                                </figure>
+                                <div class="flex flex-col">
+                                    <a href="#FIXME" class="topPlayed-name" title="Pillowtalk">Pillowtalk</a>
+                                    <a href="#FIXME" class="topPlayed-artist" title="Zayn Malik">Zayn Malik</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="played"> 239</span>
+                                <span class="like mx-4">like</span>
+                                <span class="more">more</span>
+                            </div>
+                        </li>
+                        <li class="topPlayed-li group">
+                            <div class="flex items-center">
+                                <span class="num">4</span>
+                                <figure class="topPlayed-figure">
+                                    <img src="./src/images/image5.jpg" alt="Top Played 4">
+                                    <div class="topPlayed-icon">
+                                        <span class="play">play</span>
+                                    </div>
+                                </figure>
+                                <div class="flex flex-col">
+                                    <a href="#FIXME" class="topPlayed-name" title="Cradles">Stay</a>
+                                    <a href="#FIXME" class="topPlayed-artist" title="Justin Bieber">Justin Bieber</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="played"> 132</span>
+                                <span class="like mx-4">like</span>
+                                <span class="more">more</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="events ml-4 md:w-1/2 w-full">
+                    <h2 class="section-heading">Events</h2>
+                    <ul class="flex items-center w-full mt-4 mb-10">
+                        <li class="event-li py-6 bg-teal-400 hover:sm:bg-teal-500"><a href="#FIXME" class="event-link" title="Radio Chart">Radio Chart</a></li>
+                        <li class="event-li ml-2 bg-blue-300 hover:sm:bg-blue-400"><a href="#FIXME" class="event-link" title="Voice 2019">Voice 2019</a></li>
+                    </ul>
+                    <h3 class="section-heading">News</h3>
+                    <ul class="my-4 flex sm:flex-row sm:justify-between flex-col items-center gap-4">
+                        <li class="news-li">
+                            <figure class="news-figure">
+                                <img class="news-img" src="./src/images/news1.jpeg" alt="Wave Racer">
+                            </figure>
+                            <a href="#FIXME" class="news-name" title="Wave Racer">Wave Racer</a>
+                            <p class="news-date">June 30, 2022</p>
+                        </li>
+                        <li class="news-li">
+                            <figure class="news-figure">
+                                <img class="news-img" src="./src/images/news2.jpg" alt="Sevenn Drop">
+                            </figure>
+                            <a href="#FIXME" class="news-name" title="Seven Drop">Seven Drop</a>
+                            <p class="news-date">June 30, 2022</p>
+                        </li>
+                        <li class="news-li">
+                            <figure class="news-figure">
+                                <img class="news-img" src="./src/images/news3.jpg" alt="Maze Runner">
+                            </figure>
+                            <a href="#FIXME" class="news-name" title="Mazer Runner">Maze Runner</a>
+                            <p class="news-date">June 30, 2022</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="back w-full flex items-center z-10">
+            <div class="wrapper sm:w-8/12 text-center">
+                <p class="mb-6 text-white text-3xl font-bold font-poppins">Music is everything. Listen to thousands of songs for free on BEATSTACK</p>
+                <a href="#FIXME" class="mt-6 py-2 px-16 text-black text-sm font-semibold bg-white hover:sm:bg-black hover:sm:text-white transition-all duration-500" title="Explore">Explore</a>
+            </div>
+        </section>
+      </main>
+      <!--main section end-->
+      <!--footer section start-->
+      <footer>
+          <div class="wrapper my-8 text-center">
+              <ul class="footer-list">
+                  <li>
+                    <div><a href="#FIXME" class="logo text-xl" title="Beatstack">beatStack</a></div>
+                  </li>
+                  <li>
+                    <h2 class="footer-header">Business</h2>
+                    <ul>
+                        <li class="footer-link"><a href="#FIXME" title="Artists">Artists</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Podcaster">Podcaster</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Radio">Radio</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Station">Station</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Video">Video</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="AD">AD</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h2 class="footer-header">Company</h2>
+                    <ul>
+                        <li class="footer-link"><a href="#FIXME" title="About Us">About Us</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Jobs">Jobs</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Documents">Documents</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h2 class="footer-header">Legal</h2>
+                    <ul>
+                        <li class="footer-link"><a href="#FIXME" title="Terms">Terms</a></li>
+                        <li class="footer-link"><a href="#FIXME" title="Privacy">Privacy</a></li>
+                    </ul>
+                  </li>
+              </ul>
+              <span class=" text-gray-500 text-sm mx-auto text-center">&copy; Copyright 2019 Bepop Entertainment Inc.</span>
+          </div>
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

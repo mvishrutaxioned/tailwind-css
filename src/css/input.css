@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wrapper { @apply w-11/12 mx-auto }
+
+    .logo {
+        @apply text-white font-bold text-2xl font-poppins
+    }
+    
+    .featured-slider .slick-prev,
+    .featured-slider .slick-next,
+    .radio-slider .slick-prev,
+    .radio-slider .slick-next {
+        @apply text-vanish m-auto after:w-8 after:h-8 after:m-auto after:text-black after:rounded-full after:flex after:justify-center after:items-center
+        after:absolute after:top-0 after:bottom-0 after:bg-white after:font-bold after:text-base after:transition-all after:duration-500
+        after:z-10 hover:after:scale-125
+    }
+
+    .featured-slider .slick-prev,
+    .radio-slider .slick-prev {
+        @apply after:-left-2 after:content-['\f104']
+    }
+
+    .featured-slider .slick-next,
+    .radio-slider .slick-next {
+        @apply after:-right-2 after:content-['\f105']
+    }
+
+    .closeBtn {
+        @apply text-vanish md:hidden hover:after:text-white after:text-gray-400 hover:text-white 
+        after:font-bold after:transition-all after:duration-500 after:cursor-pointer
+        after:content-['\f00d'] absolute top-3 right-4 after:text-lg
+    }
+
+    .menuBtn {
+        @apply text-vanish md:hidden hover:after:text-gray-500 after:text-white hover:text-white 
+        after:font-bold after:transition-all after:duration-500 after:cursor-pointer
+        after:content-['\f0c9'] after:text-lg
+    }
+
+    .navbar {
+        @apply lg:w-11/12 md:w-10/12 md:ml-12 md:static md:h-auto flex md:flex-row md:justify-between items-center
+        fixed top-0 right-0 w-full sm:w-6/12 h-screen bg-black z-30 flex-col justify-center transition-all duration-500
+    }
+
+    .like {
+        @apply text-vanish transition-all duration-500 after:bg-none after:font-bold after:z-20
+        cursor-pointer hover:scale-125 after:text-xs after:text-white after:content-['\f004']
+    }
+
+    .play {
+        @apply text-vanish after:p-3 after:rounded-full after:text-black transition-all duration-500 after:font-bold after:z-20
+        cursor-pointer hover:scale-125 after:text-xs after:bg-white after:content-['\f04b']
+    }
+
+    .more {
+        @apply text-vanish transition-all duration-500 after:bg-none after:font-bold after:z-20
+        cursor-pointer hover:scale-125 after:text-xs after:text-white after:content-['\f141']
+    }
+
+    .played {
+        @apply flex items-center before:mr-2 text-xs z-10 before:text-gray-500 before:font-bold 
+        before:z-20 cursor-pointer before:text-xs before:bg-none before:content-['\f04b']
+    }
+
+    .nav-link {
+        @apply text-gray-400 
+        text-xs 
+        font-semibold 
+        hover:sm:text-white 
+        transition-all 
+        duration-500
+    }
+
+    .nav-item {
+        @apply text-white font-semibold text-xs p-4 transition-all duration-500
+    }
+
+    .banner-slider { @apply flex items-center }
+    .banner-figure { @apply relative h-96 overflow-hidden }
+    .banner-image { @apply w-full h-full object-cover }
+
+    .banner-content {
+        @apply w-10/12 sm:w-8/12 mx-auto mt-16 absolute top-0 right-0 bottom-0 left-0 text-white
+    }
+    
+    .banner-heading { @apply text-4xl font-bold font-poppins }
+    .banner-text { @apply text-base mt-4 md:mb-14 mb-8 }
+
+    .banner-link {
+        @apply text-base py-2 px-12 text-black bg-white hover:sm:bg-black hover:sm:text-white transition-all duration-700
+    }
+
+    .section-heading { @apply text-white text-xl font-semibold }
+    .feature-figure { @apply rounded-sm my-4 overflow-hidden relative }
+
+    .feature-name {
+        @apply text-sm text-white font-semibold hover:sm:text-teal-500
+    }
+
+    .feature-artist {
+        @apply text-xs text-gray-400 hover:sm:text-teal-500
+    }
+
+    .feature-content {
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:flex z-20
+    }
+
+    .track-content { @apply flex flex-col }
+
+    .radio-li {
+        @apply mx-2 px-2 pb-4 rounded bg-black transition-all duration-500 hover:sm:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
+    }
+
+    .radio-figure {
+        @apply rounded-sm my-4 overflow-hidden relative
+    }
+
+    .radio-content {
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:flex z-20
+    }
+
+    .radio-name {
+        @apply text-sm text-white font-semibold hover:sm:text-emerald-200
+    }
+
+    .radio-artist {
+        @apply text-xs text-white font-semibold hover:sm:text-emerald-200
+    }
+
+    .radio-info { @apply flex flex-col items-center }
+    .topPlayed-li { @apply flex justify-between my-6 }
+    .num { @apply text-sm font-semibold sm:mr-6 mr-2 }
+
+    .topPlayed-figure {
+        @apply rounded-md md:w-1/6 w-2/6 overflow-hidden relative mr-2
+    }
+
+    .topPlayed-icon {
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-25 group-hover:sm:flex z-20 cursor-pointer
+    }
+
+    .topPlayed-name {
+        @apply text-white hover:sm:text-teal-400 sm:text-base text-sm font-semibold
+    }
+
+    .topPlayed-artist {
+        @apply sm:text-sm text-xs hover:sm:text-teal-400 font-light
+    }
+
+    .event-li {
+        @apply py-6 w-1/2  text-center transition-all cursor-pointer
+    }
+
+    .event-link {
+        @apply w-full py-6  text-white text-lg font-semibold
+    }
+
+    .news-li { @apply sm:w-1/3 w-full }
+
+    .news-figure {
+        @apply w-full h-28 rounded-sm overflow-hidden mb-2
+    }
+
+    .news-img { @apply w-full h-full object-cover }
+
+    .news-name {
+        @apply text-white text-sm font-semibold hover:sm:text-teal-300
+    }
+
+    .news-date { @apply text-xs text-gray-500 }
+
+    .back {
+        @apply w-full flex items-center bg-fixed bg-cover bg-no-repeat bg-top
+    }
+
+    .footer-list {
+        @apply w-11/12 md:w-8/12 mx-auto my-12 sm:text-left flex sm:flex-row sm:justify-between sm:items-start flex-col items-center text-center text-gray-500
+    }
+
+    .footer-header {
+        @apply text-base font-bold text-white sm:mb-4 sm:mt-0 mt-4 mb-1
+    }
+
+    .footer-link { @apply text-sm hover:sm:text-gray-400 }
+}
