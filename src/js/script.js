@@ -1,13 +1,16 @@
+// open navbar on click
 $('#menu').click(() => {
     $('nav').removeClass('translate-x-full')
     $("html, body").css("overflow-y", "hidden")
 })
 
+// close navbar on click
 $('#close').click(() => {
     $('nav').addClass('translate-x-full')
     $("html, body").css("overflow-y", "visible")
 })
 
+// feature slick slider
 $(document).ready(() => {
     $('.banner-slider').slick({
         dots: true,
@@ -37,6 +40,7 @@ $(document).ready(() => {
         ]
     })
 
+    // radio slick slider
     $('.radio-slider').slick({
         arrows: true,
         slidesToShow: 6,

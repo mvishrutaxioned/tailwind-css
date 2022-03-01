@@ -5,9 +5,7 @@
 @layer components {
     .wrapper { @apply w-11/12 mx-auto }
 
-    .logo {
-        @apply text-white font-bold text-2xl font-poppins
-    }
+    .logo { @apply text-white font-bold text-2xl font-poppins }
     
     .featured-slider .slick-prev,
     .featured-slider .slick-next,
@@ -15,7 +13,7 @@
     .radio-slider .slick-next {
         @apply text-vanish m-auto after:w-8 after:h-8 after:m-auto after:text-black after:rounded-full after:flex after:justify-center after:items-center
         after:absolute after:top-0 after:bottom-0 after:bg-white after:font-bold after:text-base after:transition-all after:duration-500
-        after:z-10 hover:after:scale-125
+        after:z-10 hover:md:after:scale-125
     }
 
     .featured-slider .slick-prev,
@@ -29,13 +27,13 @@
     }
 
     .closeBtn {
-        @apply text-vanish md:hidden hover:after:text-white after:text-gray-400 hover:text-white 
+        @apply text-vanish md:hidden after:text-gray-400
         after:font-bold after:transition-all after:duration-500 after:cursor-pointer
         after:content-['\f00d'] absolute top-3 right-4 after:text-lg
     }
 
     .menuBtn {
-        @apply text-vanish md:hidden hover:after:text-gray-500 after:text-white hover:text-white 
+        @apply text-vanish md:hidden after:text-white
         after:font-bold after:transition-all after:duration-500 after:cursor-pointer
         after:content-['\f0c9'] after:text-lg
     }
@@ -47,17 +45,17 @@
 
     .like {
         @apply text-vanish transition-all duration-500 after:bg-none after:font-bold after:z-20
-        cursor-pointer hover:scale-125 after:text-xs after:text-white after:content-['\f004']
+        cursor-pointer hover:md:scale-125 after:text-xs after:text-white after:content-['\f004']
     }
 
     .play {
         @apply text-vanish after:p-3 after:rounded-full after:text-black transition-all duration-500 after:font-bold after:z-20
-        cursor-pointer hover:scale-125 after:text-xs after:bg-white after:content-['\f04b']
+        cursor-pointer hover:md:scale-125 after:text-xs after:bg-white after:content-['\f04b']
     }
 
     .more {
         @apply text-vanish transition-all duration-500 after:bg-none after:font-bold after:z-20
-        cursor-pointer hover:scale-125 after:text-xs after:text-white after:content-['\f141']
+        cursor-pointer hover:md:scale-125 after:text-xs after:text-white after:content-['\f141']
     }
 
     .played {
@@ -69,7 +67,7 @@
         @apply text-gray-400 
         text-xs 
         font-semibold 
-        hover:sm:text-white 
+        hover:md:text-white 
         transition-all 
         duration-500
     }
@@ -86,32 +84,34 @@
         @apply w-10/12 sm:w-8/12 mx-auto mt-16 absolute top-0 right-0 bottom-0 left-0 text-white
     }
     
-    .banner-heading { @apply text-4xl font-bold font-poppins }
-    .banner-text { @apply text-base mt-4 md:mb-14 mb-8 }
+    .banner-heading { @apply text-xl md:text-4xl font-bold font-poppins }
+    .banner-text { @apply text-sm md:text-base mt-4 md:mb-14 mb-8 }
 
     .banner-link {
-        @apply text-base py-2 px-12 text-black bg-white hover:sm:bg-black hover:sm:text-white transition-all duration-700
+        @apply text-sm md:text-base py-2 px-6 md:px-12 text-black bg-white hover:md:bg-black hover:md:text-white transition-all duration-700
     }
 
     .section-heading { @apply text-white text-xl font-semibold }
     .feature-figure { @apply rounded-sm my-4 overflow-hidden relative }
 
     .feature-name {
-        @apply text-sm text-white font-semibold hover:sm:text-teal-500
+        @apply text-sm text-white font-semibold hover:md:text-teal-500
     }
 
     .feature-artist {
-        @apply text-xs text-gray-400 hover:sm:text-teal-500
+        @apply text-xs text-gray-400 hover:md:text-teal-500
     }
 
+    .album { @apply w-full h-full object-cover }
+
     .feature-content {
-        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:flex z-20
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:md:flex z-20
     }
 
     .track-content { @apply flex flex-col }
 
     .radio-li {
-        @apply mx-2 px-2 pb-4 rounded bg-black transition-all duration-500 hover:sm:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
+        @apply mx-2 px-2 pb-4 rounded bg-black transition-all duration-500 hover:md:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
     }
 
     .radio-figure {
@@ -119,15 +119,15 @@
     }
 
     .radio-content {
-        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:flex z-20
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-60 group-hover:md:flex z-20
     }
 
     .radio-name {
-        @apply text-sm text-white font-semibold hover:sm:text-emerald-200
+        @apply text-sm text-white font-semibold hover:md:text-emerald-200
     }
 
     .radio-artist {
-        @apply text-xs text-white font-semibold hover:sm:text-emerald-200
+        @apply text-xs text-white font-semibold hover:md:text-emerald-200
     }
 
     .radio-info { @apply flex flex-col items-center }
@@ -135,19 +135,19 @@
     .num { @apply text-sm font-semibold sm:mr-6 mr-2 }
 
     .topPlayed-figure {
-        @apply rounded-md md:w-1/6 w-2/6 overflow-hidden relative mr-2
+        @apply rounded-md w-16 h-16 md:w-24 md:h-24 overflow-hidden relative mr-2
     }
 
     .topPlayed-icon {
-        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-25 group-hover:sm:flex z-20 cursor-pointer
+        @apply hidden absolute top-0 right-0 bottom-0 left-0 justify-evenly items-center bg-black bg-opacity-25 group-hover:md:flex z-20 cursor-pointer
     }
 
     .topPlayed-name {
-        @apply text-white hover:sm:text-teal-400 sm:text-base text-sm font-semibold
+        @apply text-white hover:md:text-teal-400 sm:text-base text-sm font-semibold
     }
 
     .topPlayed-artist {
-        @apply sm:text-sm text-xs hover:sm:text-teal-400 font-light
+        @apply sm:text-sm text-xs hover:md:text-teal-400 font-light
     }
 
     .event-li {
@@ -167,13 +167,13 @@
     .news-img { @apply w-full h-full object-cover }
 
     .news-name {
-        @apply text-white text-sm font-semibold hover:sm:text-teal-300
+        @apply text-white text-sm font-semibold hover:md:text-teal-300
     }
 
     .news-date { @apply text-xs text-gray-500 }
 
     .back {
-        @apply w-full flex items-center bg-fixed bg-cover bg-no-repeat bg-top
+        @apply w-full flex items-center sm:w-8/12 text-center
     }
 
     .footer-list {
@@ -184,5 +184,5 @@
         @apply text-base font-bold text-white sm:mb-4 sm:mt-0 mt-4 mb-1
     }
 
-    .footer-link { @apply text-sm hover:sm:text-gray-400 }
+    .footer-link { @apply text-sm hover:md:text-gray-400 }
 }
